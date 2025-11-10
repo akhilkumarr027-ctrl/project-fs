@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizVerse - Premium Quiz Platform</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* === Added Background Styling === */
+    .hero {
+      background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+        url('https://images.unsplash.com/photo-1526378722484-ccdc6e2f09b0?auto=format&fit=crop&w=1470&q=80')
+        no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    .cta-button {
+      background: #ff6600;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #e65c00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">QuizVerse</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="home" class="hero">
+    <h1>Unlock Your Knowledge</h1>
+    <p>Challenge yourself with premium quizzes on tech, coding, and more. Timed, randomized, and results-driven.</p>
+    <button class="cta-button" onclick="document.getElementById('featured-quizzes').scrollIntoView({behavior: 'smooth'})">Start Quizzing</button>
+  </section>
+  
+  <div class="container">
+    <section id="featured-quizzes" class="section">
+      <h2 class="section-title">Featured Quizzes</h2>
+      <div class="quiz-slider">
+        <div class="card" onclick="window.location.href='name.html?quiz=html'">
+          <i class="fas fa-code"></i>
+          <h3>HTML Quiz</h3>
+          <p>Master web structure basics.</p>
+        </div>
+        <div class="card" onclick="window.location.href='name.html?quiz=css'">
+          <i class="fas fa-palette"></i>
+          <h3>CSS Quiz</h3>
+          <p>Style with elegance.</p>
+        </div>
+        <div class="card" onclick="window.location.href='name.html?quiz=dsa_cpp'">
+          <i class="fas fa-cogs"></i>
+          <h3>DSA C++ Quiz</h3>
+          <p>Algorithm mastery.</p>
+        </div>
+        <div class="card" onclick="window.location.href='name.html?quiz=python'">
+          <i class="fab fa-python"></i>
+          <h3>Python Quiz</h3>
+          <p>Code like a pro.</p>
+        </div>
+        <div class="card" onclick="window.location.href='name.html?quiz=javascript'">
+          <i class="fab fa-js-square"></i>
+          <h3>JavaScript Quiz</h3>
+          <p>Dynamic interactions.</p>
+        </div>
+        <div class="card" onclick="window.location.href='name.html?quiz=sql'">
+          <i class="fas fa-database"></i>
+          <h3>SQL Quiz</h3>
+          <p>Data querying expert.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section stats">
+      <div class="stat">
+        <h4>500+</h4>
+        <p>Quizzes Taken</p>
+      </div>
+      <div class="stat">
+        <h4>10</h4>
+        <p>Quiz Types</p>
+      </div>
+      <div class="stat">
+        <h4>5 Min</h4>
+        <p>Avg. Challenge Time</p>
+      </div>
+    </section>
+    
+    <section id="about" class="section">
+      <h2 class="section-title">About QuizVerse</h2>
+      <p>QuizVerse is a premium platform for skill-building. Our randomized, timed quizzes cover tech topics with instant results and visualizations.</p>
+    </section>
+    
+    <section class="section testimonials">
+      <h2 class="section-title">What Users Say</h2>
+      <div class="testimonial">
+        <p>"Amazing platform! Helped me ace my coding interviews."</p>
+        <cite>- Akhil, Mehul, Developer</cite>
+      </div>
+      <div class="testimonial">
+        <p>"The timer adds real pressure—love it!"</p>
+        <cite>- XYZ, Student</cite>
+      </div>
+    </section>
+    
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Us</h2>
+      <p>Email: <a href="mailto:collage66018@gmail.com">collage66018@gmail.com</a></p>
+      <p>Phone: +91 83XXXXXXX</p>
+      <p>Address: Chandigarh University, Mohali, India</p>
+    </section>
+    
+    <section id="feedback" class="section newsletter">
+      <h2 class="section-title">Feedback & Newsletter</h2>
+      <p>Share your thoughts or subscribe for updates!</p>
+      <form action="mailto:collage66018@gmail.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="message" placeholder="Feedback or Subscribe">
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 QuizVerse <span class="heart">&hearts;</span> by Sharma</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+  
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><i class="fas fa-arrow-up"></i></button>
+  
+  <script src="js/script.js"></script>
+  <script>
+    // Show back-to-top button on scroll
+    window.addEventListener('scroll', () => {
+      const button = document.querySelector('.back-to-top');
+      if (window.scrollY > 300) {
+        button.classList.add('show');
+      } else {
+        button.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>

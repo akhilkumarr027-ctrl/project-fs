@@ -1,0 +1,62 @@
+[
+    {
+      "question": "What does HTML stand for?",
+      "options": ["HyperText Markup Language", "HighText Machine Language", "Hyperlink and Text Markup Language", "Home Tool Markup Language"],
+      "answer": 0
+    },
+    {
+      "question": "Which tag is used for the largest heading in HTML?",
+      "options": ["<h1>", "<h6>", "<head>", "<header>"],
+      "answer": 0
+    },
+    {
+      "question": "What is the correct HTML element for inserting a line break?",
+      "options": ["<br>", "<lb>", "<break>", "<newline>"],
+      "answer": 0
+    },
+    {
+      "question": "Which attribute is used to provide an alternative text for an image?",
+      "options": ["alt", "src", "title", "href"],
+      "answer": 0
+    },
+    {
+      "question": "What is the purpose of the <meta> tag in HTML?",
+      "options": ["To define metadata about the document", "To create a table", "To add images", "To style text"],
+      "answer": 0
+    },
+    {
+      "question": "Which HTML element is used to define a hyperlink?",
+      "options": ["<a>", "<link>", "<href>", "<url>"],
+      "answer": 0
+    },
+    {
+      "question": "What does the <div> tag represent?",
+      "options": ["A division or section", "A paragraph", "A list item", "A heading"],
+      "answer": 0
+    },
+    {
+      "question": "Which tag is used to create an unordered list?",
+      "options": ["<ul>", "<ol>", "<li>", "<list>"],
+      "answer": 0
+    },
+    {
+      "question": "What is the default display property of a <span> element?",
+      "options": ["inline", "block", "inline-block", "none"],
+      "answer": 0
+    },
+    {
+      "question": "Which HTML5 element is used for semantic sectioning?",
+      "options": ["<section>", "<div>", "<article>", "<span>"],
+      "answer": 0
+    },
+    {
+      "question": "What does the 'id' attribute do in HTML?",
+      "options": ["Uniquely identifies an element", "Links to external styles", "Defines a class", "Adds a tooltip"],
+      "answer": 0
+    },
+    {
+      "question": "Which tag is used for the smallest heading?",
+      "options": ["<h6>", "<h1>", "<h3>", "<h4>"],
+      "answer": 0
+    }
+  ]

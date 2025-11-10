@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - QuizVerse</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .progress-bar {
+      width: 100%;
+      height: 10px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background-color: #003366;
+      transition: width 0.3s ease;
+    }
+    .question-counter {
+      font-size: 1.1rem;
+      color: #666666;
+      margin-bottom: 1rem;
+    }
+    #options {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .option-btn {
+      background-color: #f4f4f4;
+      border: 1px solid #cccccc;
+      padding: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: left;
+      font-size: 1rem;
+    }
+    .option-btn:hover {
+      background-color: #003366;
+      color: #ffffff;
+      border-color: #003366;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">QuizVerse</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="quiz-container">
+      <div id="timer" class="timer">Time Left: 5:00</div>
+      <div class="progress-bar">
+        <div id="progress-fill" class="progress-fill" style="width: 0%;"></div>
+      </div>
+      <div class="question-counter" id="question-counter">Question 1 of 10</div>
+      <h2 id="question"></h2>
+      <div id="options"></div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 QuizVerse <span class="heart">&hearts;</span> by Sharma
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+    // Update progress bar and counter
+    function updateProgress() {
+      const progress = ((currentQuestionIndex) / 10) * 100;
+      document.getElementById('progress-fill').style.width = progress + '%';
+      document.getElementById('question-counter').textContent = `Question ${currentQuestionIndex + 1} of 10`;
+    }
+    // Override showQuestion to include updates
+    const originalShowQuestion = showQuestion;
+    showQuestion = function() {
+      originalShowQuestion();
+      updateProgress();
+    };
+  </script>
+</body>
+</html>

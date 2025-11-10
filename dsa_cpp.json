@@ -1,0 +1,62 @@
+[
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(log n)", "O(n)", "O(n^2)", "O(1)"],
+      "answer": 0
+    },
+    {
+      "question": "Which data structure uses LIFO?",
+      "options": ["Stack", "Queue", "Array", "Linked List"],
+      "answer": 0
+    },
+    {
+      "question": "In C++, what is the keyword for dynamic memory allocation?",
+      "options": ["new", "malloc", "alloc", "create"],
+      "answer": 0
+    },
+    {
+      "question": "What does 'int *ptr' declare?",
+      "options": ["A pointer to an integer", "An integer", "An array", "A function"],
+      "answer": 0
+    },
+    {
+      "question": "Which sorting algorithm has the best average case?",
+      "options": ["Merge Sort", "Bubble Sort", "Insertion Sort", "Selection Sort"],
+      "answer": 0
+    },
+    {
+      "question": "What is a linked list?",
+      "options": ["A linear data structure", "A tree structure", "A graph", "A hash table"],
+      "answer": 0
+    },
+    {
+      "question": "In C++, how do you access a class member?",
+      "options": ["object.member", "object->member", "member.object", "member->object"],
+      "answer": 0
+    },
+    {
+      "question": "What is the purpose of recursion?",
+      "options": ["To solve problems by breaking into smaller subproblems", "To loop infinitely", "To allocate memory", "To sort arrays"],
+      "answer": 0
+    },
+    {
+      "question": "Which traversal visits root first?",
+      "options": ["Preorder", "Inorder", "Postorder", "Level order"],
+      "answer": 0
+    },
+    {
+      "question": "What is Big O notation used for?",
+      "options": ["Analyzing algorithm efficiency", "Storing data", "Compiling code", "Debugging"],
+      "answer": 0
+    },
+    {
+      "question": "In C++, what is a vector?",
+      "options": ["A dynamic array", "A static array", "A pointer", "A function"],
+      "answer": 0
+    },
+    {
+      "question": "What does 'O(n^2)' indicate?",
+      "options": ["Quadratic time", "Linear time", "Constant time", "Logarithmic time"],
+      "answer": 0
+    }
+  ]

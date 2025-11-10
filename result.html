@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results - QuizVerse</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    .result h2 {
+      margin-bottom: 1rem;
+    }
+    .score-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .score-high {
+      color: #28a745; /* Green for good scores */
+    }
+    .score-medium {
+      color: #ffc107; /* Yellow for average */
+    }
+    .score-low {
+      color: #dc3545; /* Red for low */
+    }
+    .result-actions {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .result-actions button {
+      flex: 1;
+      max-width: 200px;
+    }
+    #home {
+  background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'); /* Subtle educational background */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: Makes it fixed on scroll for a modern feel */
+  position: relative;
+}
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(244, 244, 244, 0.9); /* Light overlay for readability */
+  z-index: 1;
+}
+#home > * {
+  position: relative;
+  z-index: 2; /* Ensures content is above the overlay */
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">QuizVerse</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="result">
+      <h2 id="result-text"></h2>
+      <div id="score-icon" class="score-icon">
+        <!-- Icon based on score -->
+      </div>
+      <canvas id="scoreChart" width="400" height="200"></canvas>
+      <div class="result-actions">
+        <button onclick="window.location.href='index.html'">Back to Home</button>
+        <button onclick="retakeQuiz()">Retake Quiz</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 QuizVerse <span class="heart">&hearts;</span> by Sharma
+  </footer>
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const score = localStorage.getItem('score');
+      const total = localStorage.getItem('total');
+      const userName = localStorage.getItem('userName');
+      document.getElementById('result-text').textContent = `${userName}, you scored ${score}/${total}!`;
+      
+      // Add icon based on score
+      const iconElement = document.getElementById('score-icon');
+      if (score >= 8) {
+        iconElement.innerHTML = '<i class="fas fa-trophy score-high"></i>';
+      } else if (score >= 5) {
+        iconElement.innerHTML = '<i class="fas fa-star score-medium"></i>';
+      } else {
+        iconElement.innerHTML = '<i class="fas fa-frown score-low"></i>';
+      }
+      
+      // Chart remains the same
+      const ctx = document.getElementById('scoreChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6', 'Q7', 'Q8', 'Q9', 'Q10'],
+          datasets: [{
+            label: 'Score Progress',
+            data: Array.from({length: 10}, (_, i) => (i < parseInt(score)) ? 1 : 0),
+            borderColor: '#003366',
+            fill: false
+          }]
+        }
+      });
+    });
+    
+    function retakeQuiz() {
+      // Reset and redirect to name page (assuming same quiz type)
+      localStorage.removeItem('score');
+      const urlParams = new URLSearchParams(window.location.search);
+      const quizType = urlParams.get('quiz') || 'html'; // Default fallback
+      window.location.href = `name.html?quiz=${quizType}`;
+    }
+  </script>
+</body>
+</html>

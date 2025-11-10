@@ -1,0 +1,62 @@
+[
+    {
+      "question": "What does CSS stand for?",
+      "options": ["Cascading Style Sheets", "Computer Style Sheets", "Creative Style Sheets", "Colorful Style Sheets"],
+      "answer": 0
+    },
+    {
+      "question": "Which property is used to change the background color?",
+      "options": ["background-color", "color", "bgcolor", "background"],
+      "answer": 0
+    },
+    {
+      "question": "How do you select an element with id 'demo'?",
+      "options": ["#demo", ".demo", "demo", "*demo"],
+      "answer": 0
+    },
+    {
+      "question": "Which CSS property controls the text size?",
+      "options": ["font-size", "text-size", "size", "font"],
+      "answer": 0
+    },
+    {
+      "question": "What is the default value of the position property?",
+      "options": ["static", "relative", "absolute", "fixed"],
+      "answer": 0
+    },
+    {
+      "question": "Which property is used to change the font of an element?",
+      "options": ["font-family", "font-style", "font", "text-font"],
+      "answer": 0
+    },
+    {
+      "question": "How do you make a list not display bullet points?",
+      "options": ["list-style-type: none;", "list-style: none;", "bullet: none;", "display: none;"],
+      "answer": 0
+    },
+    {
+      "question": "What does 'margin: 0 auto;' do?",
+      "options": ["Centers the element horizontally", "Centers vertically", "Adds padding", "Removes borders"],
+      "answer": 0
+    },
+    {
+      "question": "Which unit is relative to the font-size of the root element?",
+      "options": ["rem", "em", "px", "vh"],
+      "answer": 0
+    },
+    {
+      "question": "How do you add a comment in CSS?",
+      "options": ["/* comment */", "// comment", "<!-- comment -->", "# comment"],
+      "answer": 0
+    },
+    {
+      "question": "What is the purpose of the 'flex' property?",
+      "options": ["To create flexible layouts", "To add colors", "To style text", "To animate elements"],
+      "answer": 0
+    },
+    {
+      "question": "Which property is used for rounded corners?",
+      "options": ["border-radius", "corner-radius", "round-border", "border-round"],
+      "answer": 0
+    }
+  ]

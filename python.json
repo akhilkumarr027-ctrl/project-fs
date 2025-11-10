@@ -1,0 +1,62 @@
+[
+    {
+      "question": "What is the output of print(2**3)?",
+      "options": ["8", "6", "9", "Error"],
+      "answer": 0
+    },
+    {
+      "question": "Which keyword is used to define a function?",
+      "options": ["def", "function", "fun", "define"],
+      "answer": 0
+    },
+    {
+      "question": "What does 'len()' do?",
+      "options": ["Returns length of an object", "Adds elements", "Sorts list", "Reverses list"],
+      "answer": 0
+    },
+    {
+      "question": "How do you create a list in Python?",
+      "options": ["[]", "{}", "()", "<>"],
+      "answer": 0
+    },
+    {
+      "question": "What is a tuple?",
+      "options": ["Immutable sequence", "Mutable list", "Dictionary", "Set"],
+      "answer": 0
+    },
+    {
+      "question": "Which operator is used for floor division?",
+      "options": ["//", "/", "%", "**"],
+      "answer": 0
+    },
+    {
+      "question": "How do you start a comment?",
+      "options": ["#", "//", "/*", "<!--"],
+      "answer": 0
+    },
+    {
+      "question": "What does 'if __name__ == '__main__':' do?",
+      "options": ["Runs code only if script is executed directly", "Imports modules", "Defines functions", "Creates classes"],
+      "answer": 0
+    },
+    {
+      "question": "Which method adds an element to a list?",
+      "options": ["append()", "add()", "insert()", "push()"],
+      "answer": 0
+    },
+    {
+      "question": "What is a dictionary?",
+      "options": ["Key-value pairs", "Ordered list", "Set of numbers", "String"],
+      "answer": 0
+    },
+    {
+      "question": "How do you handle exceptions?",
+      "options": ["try-except", "if-else", "for-loop", "while-loop"],
+      "answer": 0
+    },
+    {
+      "question": "What does 'range(5)' produce?",
+      "options": ["0 to 4", "1 to 5", "0 to 5", "Error"],
+      "answer": 0
+    }
+  ]
